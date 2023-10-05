@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Usuário e Senha</title>
+</head>
+
+<body>
+    <h1>Verificação de Usuário e Senha</h1>
+
+    <label for="usuario">Usuário:</label>
+    <input type="text" id="usuario"><br>
+
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha"><br>
+
+    <button onclick="verificarCredenciais()">Verificar</button>
+
+    <script src="usuarios.js"></script>
+    <script>
+        function verificarCredenciais() {
+            var usuarioDigitado = document.getElementById("usuario").value;
+            var senhaDigitada = document.getElementById("senha").value;
+
+            var usuarioExistente = usuarios.find(function (usuario) {
+                return usuario.usuario === usuarioDigitado && usuario.senha === senhaDigitada;
+            });
+
+            if (usuarioExistente) {
+                alert("Login bem-sucedido!");
+            } else {
+                alert("Credenciais inválidas. Tente novamente.");
+            }
+        }
+    </script>
+</body>
+
+</html>
