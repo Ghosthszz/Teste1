@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuários</title>
+</head>
+
+<body>
+    <h1>Cadastro de Usuários</h1>
+
+    <label for="usuario">Usuário:</label>
+    <input type="text" id="usuario"><br>
+
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha"><br>
+
+    <button onclick="salvarUsuario()">Salvar</button>
+
+    <script src="usuários.js"></script>
+    <script>
+        function salvarUsuario() {
+            var usuario = document.getElementById("usuario").value;
+            var senha = document.getElementById("senha").value;
+
+            // Verifica se o usuário já existe
+            var usuarioExistente = usuarios.find(function (user) {
+                return user.usuario === usuario;
+            });
+
+            if (usuarioExistente) {
+                alert("Usuário já existe. Escolha outro nome de usuário.");
+            } else {
+                // Adiciona o novo usuário ao array de usuários
+                usuarios.push({ usuario: usuario, senha: senha });
+                alert("Usuário cadastrado com sucesso!");
+                // Limpa os campos do formulário
+                document.getElementById("usuario").value = "";
+                document.getElementById("senha").value = "";
+            }
+        }
+    </script>
+</body>
+
+</html>
