@@ -1,40 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificação de Usuário e Senha</title>
-</head>
-
-<body>
-    <h1>Verificação de Usuário e Senha</h1>
-
-    <label for="usuario">Usuário:</label>
-    <input type="text" id="usuario"><br>
-
-    <label for="senha">Senha:</label>
-    <input type="password" id="senha"><br>
-
-    <button onclick="verificarCredenciais()">Verificar</button>
-
+    <title>Formulário de Login</title>
     <script src="usuários.js"></script>
     <script>
-        function verificarCredenciais() {
-            var usuarioDigitado = document.getElementById("usuario").value;
-            var senhaDigitada = document.getElementById("senha").value;
+        function validarLogin() {
+            var usuario = document.getElementById("usuario").value;
+            var senha = document.getElementById("senha").value;
 
-            var usuarioExistente = usuarios.find(function (usuario) {
-                return usuario.usuario === usuarioDigitado && usuario.senha === senhaDigitada;
-            });
-
-            if (usuarioExistente) {
-                alert("Login bem-sucedido!");
+            var usuarioValido = verificarCredenciais(usuario, senha);
+            if (usuarioValido) {
+                alert("Login bem-sucedido! Bem-vindo, " + usuario);
+                // Redirecionar ou executar outras ações após o login bem-sucedido
             } else {
                 alert("Credenciais inválidas. Tente novamente.");
             }
+
+            // Impede o envio do formulário
+            return false;
         }
     </script>
+</head>
+<body>
+    <h2>Formulário de Login</h2>
+    <form onsubmit="return validarLogin();">
+        <label for="usuario">Usuário:</label>
+        <input type="text" id="usuario" name="usuario" required><br><br>
+        
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required><br><br>
+        
+        <button type="submit">Login</button>
+    </form>
 </body>
-
 </html>
