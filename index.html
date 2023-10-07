@@ -12,14 +12,15 @@
 
             var usuarioValido = verificarCredenciais(usuario, senha);
             if (usuarioValido) {
-                alert("Login bem-sucedido! Bem-vindo, " + usuario);
-                // Redirecionar ou executar outras ações após o login bem-sucedido
+                // Redireciona para a página logado.html
+                window.location.href = "logado.html";
+                // Impede o envio do formulário
+                return false;
             } else {
                 alert("Credenciais inválidas. Tente novamente.");
+                // Impede o envio do formulário
+                return false;
             }
-
-            // Impede o envio do formulário
-            return false;
         }
     </script>
 </head>
