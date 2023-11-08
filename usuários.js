@@ -1,13 +1,13 @@
 //usuários.js
 
-const  usuários  =  [
-    {  usuário : "usuário1" ,  senha : "senha123"  } ,
-    {  usuário : "usuario2" ,  senha : "senha456"  } ,
-    {  usuário : "sea@gmail.com" ,  senha : "Teste123"  } ,
- {  usuário : "design.sea@gmail.com" ,  senha : "subsarino"  } ,
-{  usuário : "Thiagoanjos08" ,  senha : "123Mudar"  } ,
+const  usuarios  =  [
+    {  usuario : "usuário1" ,  senha : "senha123"  } ,
+    {  usuario : "usuario2" ,  senha : "senha456"  } ,
+    {  usuario : "sea@gmail.com" ,  senha : "Teste123"  } ,
+ {  usuario : "design.sea@gmail.com" ,  senha : "subsarino"  } ,
+{  usuario : "Thiagoanjos08" ,  senha : "123Mudar"  } ,
    
 
-function  verificarCredenciais ( usuário ,  senha )  {
+function  verificarCredenciais ( usuario ,  senha )  {
     retornar  usuários . find ( u  =>  u . usuário  ===  usuário  &&  u . senha  ===  senha ) ;
 }
