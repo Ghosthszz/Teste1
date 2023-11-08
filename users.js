@@ -2,7 +2,7 @@
 
 const usuarios = [
     { usuario: "sea@gmail.com", senha: "Teste123" },
-    { usuario: "design@gmail.com", senha: "subsarino" },
+    { usuario: "design.sea@gmail.com", senha: "subsarino" },
     { usuario: "ghosthszz_", senha: "Nathalia260576" },
      { usuario: "Thiagoanjos08", senha: "123Mudar" },
     // Adicione mais usuários conforme necessário
