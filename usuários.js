@@ -4,6 +4,7 @@ const  usuários  =  [
     {  usuário : "design.sea@gmail.com" ,  senha : "subsarino"  } ,
     {  usuário : "ghosthszz_" ,  senha : "Nathalia260576"  } ,
      {  usuário : "Thiagoanjos08" ,  senha : "123Mudar"  } ,
+    {  usuário : "Teste.sea" ,  senha : "Teste"  } ,
     // Adicione mais usuários conforme necessário
 ] ;
 
