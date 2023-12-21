@@ -7,6 +7,7 @@ const  usuários  =  [
     // Adicione mais usuários conforme necessário
 ] ;
 
-function  verificarCredenciais ( usuário ,  senha )  {
-    retornar  usuários . find ( u  =>  u . usuário  ===  usuário  &&  u . senha  ===  senha ) ;
+function verificarCredenciais(usuário, senha) {
+    const foundUser = usuários.find(u => u.usuário === usuário && u.senha === senha);
+    return foundUser || null;
 }
