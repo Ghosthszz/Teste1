@@ -1,12 +1,10 @@
-//usuários.js
 
 const  usuários  =  [
-    {  usuário : "usuário1" ,  senha : "senha123"  } ,
-    {  usuário : "ghosthszz_" ,  senha : "Nathalia269576"  } ,
     {  usuário : "sea@gmail.com" ,  senha : "Teste123"  } ,
- {  usuário : "design.sea@gmail.com" ,  senha : "subsarino"  } ,
-{  usuário : "Thiagoanjos08" ,  senha : "123Mudar"  } ,
-
+    {  usuário : "design.sea@gmail.com" ,  senha : "subsarino"  } ,
+    {  usuário : "ghosthszz_" ,  senha : "Nathalia260576"  } ,
+     {  usuário : "Thiagoanjos08" ,  senha : "123Mudar"  } ,
+    // Adicione mais usuários conforme necessário
 ] ;
 
 function  verificarCredenciais ( usuário ,  senha )  {
