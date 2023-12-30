@@ -5,6 +5,7 @@ const  usuários  =  [
     {  usuário : "ghosthszz_" ,  senha : "Nathalia260576"  } ,
      {  usuário : "Thiagoanjos08" ,  senha : "123Mudar"  } ,
     {  usuário : "Teste.sea" ,  senha : "Teste"  } ,
+    {  usuário : "supremolorde" ,  senha : "Senha123"  } ,
     // Adicione mais usuários conforme necessário
 ] ;
 
