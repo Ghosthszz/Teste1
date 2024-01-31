@@ -6,7 +6,7 @@ const  usuários  =  [
      {  usuário : "Thiagoanjos08" ,  senha : "123Mudar"  } ,
     {  usuário : "Teste.sea" ,  senha : "Teste"  } ,
     {  usuário : "supremolorde" ,  senha : "Senha123"  } ,
-{  usuário : "teste" ,  senha : "123"  } ,
+{  usuário : "teste" ,  senha : "teste12"  } ,
     // Adicione mais usuários conforme necessário
 ] ;
 
